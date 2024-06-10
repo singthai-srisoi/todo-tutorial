@@ -559,16 +559,8 @@ video {
   margin-right: 0.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .ml-6 {
@@ -587,8 +579,16 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .w-full {
   width: 100%;
+}
+
+.table-auto {
+  table-layout: auto;
 }
 
 .items-center {

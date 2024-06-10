@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
 use dioxus::prelude::*;
 
-use crate::view::{blog::Blog, home::Home, todos::TodoListApp, todo_app::TodoAppApp};
+use crate::view::{blog::Blog, home::Home, todos::TodoListApp, todo_app::TodoAppApp, user_manage::UserManage};
 
 #[derive(Clone, Routable, Debug, PartialEq, serde::Serialize, serde::Deserialize)]
 pub enum Route {
@@ -14,6 +14,9 @@ pub enum Route {
 
     #[route("/todo_app")]
     TodoAppApp {},
+
+    #[route("/user_manage")]
+    UserManage {},
 }
 
 pub fn App() -> Element {
